@@ -1,0 +1,109 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    margin-top: 100px;
+    background-color: hsl(0, 0%, 95%);
+}
+.main{
+    display: flex;
+    text-align: center;
+    justify-content:center;
+    width: 50%;
+    height: 100%;
+    margin:auto;
+}
+.sedans{
+    background-color: hsl(31, 77%, 52%);
+    /* padding: 50px 50px 20px 20px; */
+    padding: 2rem;
+    font-size: 15px;
+    width: 33.3%;
+    text-align: start;
+}
+.suvs{
+    background-color: hsl(184, 100%, 22%);
+    /* padding: 50px 50px 50px 20px; */
+    padding: 2rem;
+    font-size: 14.69px;
+    width: 33.3%;
+    text-align: start;
+}
+.luxury{
+    background-color: hsl(179, 100%, 13%);
+    /* padding: 50px 50px 50px 20px; */
+    padding: 2rem;
+    font-size: 15px;
+    width: 33.3%;
+    text-align: start;
+}
+ h1{
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    color: hsl(0, 0%, 95%);
+   
+}
+ p{
+    color:  hsla(0, 0%, 100%, 0.75);
+    font: weight 400;
+    font-family: 'Lexend Deca', sans-serif;
+
+}
+    button{
+        margin-top: 50px;
+        font-family: 'Lexend Deca', sans-serif;
+        font-weight: 400;
+    }
+   .btn{
+    background-color: hsl(0, 0%, 95%) ;
+    border: 0;
+    border-radius:20px ;
+    padding: 10px;
+    cursor: pointer;
+    width: 110px;
+    border:0.1rem  solid hsl(0, 0%, 95%);
+   }
+   a{
+    text-decoration: none;
+} 
+   .sedans a{
+    color:  hsl(31, 77%, 52%);
+   }
+   .suvs a{
+    color: hsl(184, 100%, 22%);
+}
+.luxury a{
+    color: hsl(179, 100%, 13%);
+}
+.sedans button:hover{
+    background-color: hsl(31, 77%, 52%);
+    border: 2px solid hsl(0, 0%, 95%);
+}
+.suvs button:hover{
+    background-color: hsl(184, 100%, 22%);
+    border: 2px solid hsl(0, 0%, 95%);
+}
+.luxury button:hover{
+    background-color: hsl(179, 100%, 13%);
+    border: 2px solid hsl(0, 0%, 95%);
+}
+a:hover{
+    color: hsl(0, 0%, 95%);
+}
+@media only screen and (max-width:375px){
+    .main{
+        width:100vh;
+        flex-wrap: wrap !important;
+    }
+    .sedans, .suvs, .luxury{
+        max-width: 500px;
+    }
+}
+
+   
+
+    
+     

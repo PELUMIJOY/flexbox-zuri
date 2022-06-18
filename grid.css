@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0%;
+}
+body{
+    background-color: rgb(48, 43, 43);
+    display: flex;
+    place-items: center;
+    min-height: 100vh;
+    background-image: url("./bg-intro-dessktop.png" );
+}
+main{
+    display: grid;
+    grid-template-areas: 
+    'a a a b b'
+    'a a a b b'
+    'c c d d d'
+    'c c e e e';
+    grid-gap:10px;
+    width: 50%;
+    margin: auto;
+    
+   }
+
+main div{
+    background-color: black; 
+    padding: 50px;
+    text-align: center;
+   
+    /* border-radius: 5px; */
+}
+
+.box-1{
+    background-color: orangered;
+    grid-area: a;
+    padding: 25%;
+}
+    .box-2{
+        background-color: orange; 
+        grid-area: b; 
+        padding: 20px;
+    }
+     .box-3{
+            background-color: green; 
+            grid-area: c;
+        }
+        .box-4{
+            background-color: deepskyblue;
+            grid-area: d;
+
+        }
+        .box-5{
+            background-color: deepskyblue;
+            grid-area: e;
+        }
+        @media only screen and (max-width: 375px){
+            main{
+                width:80%;
+            }
+            .box-1{
+                padding: 50%;
+            }
+        }
+            
+        
+          
