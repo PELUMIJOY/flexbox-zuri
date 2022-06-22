@@ -5,9 +5,38 @@
 body{
     background-color: rgb(48, 43, 43);
     display: flex;
-    place-items: center;
+    /* place-items: center; */
     min-height: 100vh;
     background-image: url("./bg-intro-dessktop.png" );
+    grid-template-areas: "header"
+                      "main";
+    margin-top: 0;
+}
+header{
+    grid-area: header;
+    width: 20%;
+    margin-top: 0;
+}
+.navbar{
+    padding: 10px;
+    width: 100%;
+    background-color: rgb(222, 184, 135);
+    display: flex;
+    margin-top: 0;
+}
+.nav-list li{
+    list-style: none;
+}
+.navbar .nav-list a{
+    text-decoration: none;
+    color: black;
+}
+.navbar .nav-list li{
+    float: left;
+    padding-right: 50px;
+}
+a{
+    text-decoration: none;
 }
 main{
     display: grid;
@@ -19,13 +48,14 @@ main{
     grid-gap:10px;
     width: 50%;
     margin: auto;
+    grid-area: main;
+    /* justify-content: center; */
     
    }
 
 main div{
-    background-color: black; 
     padding: 50px;
-    text-align: center;
+    /* text-align: center; */
    
     /* border-radius: 5px; */
 }

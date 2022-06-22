@@ -5,8 +5,31 @@
     box-sizing: border-box;
 }
 .container{
-    margin-top: 100px;
     background-color: hsl(0, 0%, 95%);
+grid-template-areas: "header"
+                      "main";
+}
+header{
+    grid-area: header;
+    padding-top: 0;
+}
+.navbar{
+    padding: 10px;
+    margin-top: 0;
+    width: 100%;
+    background-color: burlywood;
+    display: flex;
+}
+.nav-list li{
+    list-style: none;
+}
+.navbar .nav-list a{
+    text-decoration: none;
+    color: black;
+}
+.navbar .nav-list li{
+    float: left;
+    padding-right: 50px;
 }
 .main{
     display: flex;
@@ -15,6 +38,8 @@
     width: 50%;
     height: 100%;
     margin:auto;
+    grid-area: main;
+    padding-top: 100px;
 }
 .sedans{
     background-color: hsl(31, 77%, 52%);
@@ -93,17 +118,21 @@
 a:hover{
     color: hsl(0, 0%, 95%);
 }
-@media only screen and (max-width:375px){
-    .main{
-        width:100vh;
+@media only screen and (max-width:500px){
+    main{
+        width:100vw;
         flex-wrap: wrap !important;
+        padding-top:10px !important;
     }
     .sedans, .suvs, .luxury{
-        max-width: 500px;
+        min-width: 300px;
+    }
+    .navbar{
+        font-size: 20px;
     }
 }
+
 
    
 
     
-     
